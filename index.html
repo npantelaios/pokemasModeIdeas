@@ -13,33 +13,42 @@
   </head>
 
   <!-- BODY STARTS-->
-  <body style="background-color: aquamarine; background-image: url('images/backgrounds/blue1.jpg');">
+  <body style="background-color: aquamarine; background-image: url('images/backgrounds/brown1.jpg');">
 
+
+    <div class="container0 mw-100 ">
+        <div class="relative" style="clear:both;">
+          <button style="border:8px solid white; font-size:40px; background-color:black; color:white" id="myButton" class="float-left rounded" >
+            POKEMON MASTERS EX - GAME MODE IDEAS  <br>
+            -- click each mode (black boxes) for details on it --
+          </button>
+        </div>
+    </div>
+
+    <!-- SINGLE PLAYER MODES -->
 
     <div class="container0 mw-100 ">
         <div class="relative" style="clear:both;">
           <button style="font-size:40px; background-color: white; color:black" id="myButton" class="float-left rounded" >
-            POKEMON MASTERS EX - GAME MODE IDEAS  <br>
-            -- click each mode for details on it --
+            SINGLE PLAYERS MODES
           </button>
         </div>
     </div>
 
     <div class="container0 mw-100 ">
         <div class="relative" style="clear:both;">
-          <button onclick="toggleText('secretBase')" style="font-size:40px; background-color: black; color:white" id="myButton" class="float-left rounded" >
-            Pokemon Secret Bases (Decoration)  
+          <button onclick="toggleText('pyramid')" style="font-size:40px; background-color: black; color:white" id="myButton" class="float-left rounded" >
+            Battle Pyramid Mode
           </button>
         </div>
     </div>
     <div class="container0 mw-100 ">
         <div class="relative" style="clear:both;">
-            <button id="secretBase" style="display: none; font-size:40px; background-color: white; color:black; text-align: left" class="float-left rounded" >
-                &bull; setup your own secret base decoration <br>
-
-                &bull; put 3-5 of your favorite pairs <br>
-
-                &bull; others can visit your base <br>
+            <button id="pyramid" style="display: none; font-size:40px; background-color: white; color:black; text-align: left" class="float-left rounded" >
+                &bull; Battle Pyramid-like mode
+                <br>&bull; forces the player into exploration mode, have to solve each (randomized) room's requirements to advance
+                <br>&bull; wild pokemon outbreaks from the legendary events replace trainer battles on most occasions, are usually avoidable but can also offer valuable rewards
+                <br>&bull; three-wave battle at the end of each set of rooms
             </button>  
         </div>
     </div>
@@ -66,6 +75,21 @@
 
     <div class="container0 mw-100 ">
         <div class="relative" style="clear:both;">
+          <button onclick="toggleText('contests')" style="font-size:40px; background-color: black; color:white" id="myButton" class="float-left rounded" >
+            Pokemon Contests
+          </button>
+        </div>
+    </div>
+    <div class="container0 mw-100 ">
+        <div class="relative" style="clear:both;">
+            <button id="contests" style="display: none; font-size:40px; background-color: white; color:black; text-align: left" class="float-left rounded" >
+                &bull; Like Hoenn/Sinnoh contests
+            </button>  
+        </div>
+    </div>
+
+    <div class="container0 mw-100 ">
+        <div class="relative" style="clear:both;">
           <button onclick="toggleText('specialTasks')" style="font-size:40px; background-color: black; color:white" id="myButton" class="float-left rounded" >
             Special Tasks Battles (weekly)  
           </button>
@@ -84,24 +108,249 @@
 
     <div class="container0 mw-100 ">
         <div class="relative" style="clear:both;">
-          <button onclick="toggleText('t5')" style="font-size:40px; background-color: black; color:white" id="myButton" class="float-left rounded" >
-            A weekly battle where you get more rewards by beating it in different ways like  
+          <button onclick="toggleText('restriction')" style="font-size:40px; background-color: black; color:white" id="myButton" class="float-left rounded" >
+            Restriction Modes  
           </button>
         </div>
     </div>
     <div class="container0 mw-100 ">
         <div class="relative" style="clear:both;">
-            <button id="t5" style="display: none; font-size:40px; background-color: white; color:black; text-align: left" class="float-left rounded" >
-                &bull; win without losing any teammates <br>
-
-                &bull; win without using sync moves <br>
-
-                &bull; win using pairs with no shared theme skills <br>
-
-                &bull; win without using items or trainer moves <br>            
+            <button id="restriction" style="display: none; font-size:40px; background-color: white; color:black; text-align: left" class="float-left rounded" >
+                &bull; like Champion Stadium but with no EX/no grid/
+                <br>&bull; link -> https://twitter.com/Neonios1/status/1447025726021005312/photo/1
+                <br>&bull; example: <img src="images/restriction.jpeg" alt="CS chart" width="1200" height="600">         
             </button>  
         </div>
     </div>
 
+    <div class="container0 mw-100 ">
+        <div class="relative" style="clear:both;">
+          <button onclick="toggleText('FFB')" style="font-size:40px; background-color: black; color:white" id="myButton" class="float-left rounded" >
+            Full-Force Battles + CS parameters  
+          </button>
+        </div>
+    </div>
+    <div class="container0 mw-100 ">
+        <div class="relative" style="clear:both;">
+            <button id="FFB" style="display: none; font-size:40px; background-color: white; color:black; text-align: left" class="float-left rounded" >
+                &bull; restore full-force battles 3v6 or 3v9
+                <br>&bull; add some extra difficulty parameters like Champion Stadium           
+            </button>  
+        </div>
+    </div>
+
+    <!-- AESTHETIC -->
+
+    <div class="container0 mw-100 ">
+        <div class="relative" style="clear:both;">
+          <button style="font-size:40px; background-color: white; color:black" id="myButton" class="float-left rounded" >
+            DECORATION/AESTHETIC CATEGORIES
+          </button>
+        </div>
+    </div>
+
+    <div class="container0 mw-100 ">
+        <div class="relative" style="clear:both;">
+          <button onclick="toggleText('secretBase')" style="font-size:40px; background-color: black; color:white" id="myButton" class="float-left rounded" >
+            Pokemon Secret Bases (Decoration)  
+          </button>
+        </div>
+    </div>
+    <div class="container0 mw-100 ">
+        <div class="relative" style="clear:both;">
+            <button id="secretBase" style="display: none; font-size:40px; background-color: white; color:black; text-align: left" class="float-left rounded" >
+                &bull; setup your own secret base decoration <br>
+
+                &bull; put 3-5 of your favorite pairs <br>
+
+                &bull; others can visit your base <br>
+            </button>  
+        </div>
+    </div>
+
+    <div class="container0 mw-100 ">
+        <div class="relative" style="clear:both;">
+          <button onclick="toggleText('amie')" style="font-size:40px; background-color: black; color:white" id="myButton" class="float-left rounded" >
+            Pokemon Amie
+          </button>
+        </div>
+    </div>
+    <div class="container0 mw-100 ">
+        <div class="relative" style="clear:both;">
+            <button id="amie" style="display: none; font-size:40px; background-color: white; color:black; text-align: left" class="float-left rounded" >
+                &bull; Feed Poffins<br>
+
+                &bull; Groom/Pet pokemon <br>
+
+                &bull; Affection system for rewards <br>
+            </button>  
+        </div>
+    </div>
+
+    <!-- CHARTS -->
+
+    <div class="container0 mw-100 ">
+        <div class="relative" style="clear:both;">
+          <button style="font-size:40px; background-color: white; color:black" id="myButton" class="float-left rounded" >
+            CHART USAGE CATEGORIES
+          </button>
+        </div>
+    </div>
+
+
+    <div class="container0 mw-100 ">
+        <div class="relative" style="clear:both;">
+          <button onclick="toggleText('csChart')" style="font-size:40px; background-color: black; color:white" id="myButton" class="float-left rounded" >
+            Champion Stadium(CS) Chart (Who used what in CS) 
+          </button>
+        </div>
+    </div>
+    <div class="container0 mw-100 ">
+        <div class="relative" style="clear:both;">
+            <button id="csChart" style="display: none; font-size:40px; background-color: white; color:black; text-align: left" class="float-left rounded" >
+                &bull; Pair Usage available to lookup in-game at any time
+                <br>&bull; sort by Type
+                <br>&bull; sort by CS Trainer Battle
+                <br>&bull; example: <img src="images/chartExample.png" alt="CS chart" width="400" height="800">
+
+            </button>  
+        </div>
+    </div>
+
+
+    <div class="container0 mw-100 ">
+        <div class="relative" style="clear:both;">
+          <button onclick="toggleText('lgChart')" style="font-size:40px; background-color: black; color:white" id="myButton" class="float-left rounded" >
+            Legendary Gauntlet(LG) Chart (Who used what in LG)
+          </button>
+        </div>
+    </div>
+    <div class="container0 mw-100 ">
+        <div class="relative" style="clear:both;">
+            <button id="lgChart" style="display: none; font-size:40px; background-color: white; color:black; text-align: left" class="float-left rounded" >
+                &bull; Pair Usage available to lookup in-game at any time
+                <br>&bull; sort by Type
+                <br>&bull; sort by Legendary Battle 
+            </button>  
+        </div>
+    </div>
+
+
+    <!-- CO - OP -->
+
+    <div class="container0 mw-100 ">
+        <div class="relative" style="clear:both;">
+          <button style="font-size:40px; background-color: white; color:black" id="myButton" class="float-left rounded" >
+            CO-OP MODES
+          </button>
+        </div>
+    </div>
+
+    <div class="container0 mw-100 ">
+        <div class="relative" style="clear:both;">
+          <button onclick="toggleText('gmax')" style="font-size:40px; background-color: black; color:white" id="myButton" class="float-left rounded" >
+            Dynamax Raids/Adventures
+          </button>
+        </div>
+    </div>
+    <div class="container0 mw-100 ">
+        <div class="relative" style="clear:both;">
+            <button id="gmax" style="display: none; font-size:40px; background-color: white; color:black; text-align: left" class="float-left rounded" >
+                &bull; boss is a dynamax/gigantamax Pokemon
+                <br>&bull; focus on co-op with other players to take it down
+                <br>&bull; dynamax skills can be vital on this mode
+            </button>  
+        </div>
+    </div>
+
+    <div class="container0 mw-100 ">
+        <div class="relative" style="clear:both;">
+          <button onclick="toggleText('guild')" style="font-size:40px; background-color: black; color:white" id="myButton" class="float-left rounded" >
+            Guild Mode
+          </button>
+        </div>
+    </div>
+    <div class="container0 mw-100 ">
+        <div class="relative" style="clear:both;">
+            <button id="guild" style="display: none; font-size:40px; background-color: white; color:black; text-align: left" class="float-left rounded" >
+                &bull; This is already mentioned in the survey
+                <br>&bull; Guild creation
+                <br>&bull; Guild War battles
+            </button>  
+        </div>
+    </div>
+
+
+    <!-- PVP MODES -->
+
+    <div class="container0 mw-100 ">
+        <div class="relative" style="clear:both;">
+          <button style="font-size:40px; background-color: white; color:black" id="myButton" class="float-left rounded" >
+            PVP MODES
+          </button>
+        </div>
+    </div>
+
+    <div class="container0 mw-100 ">
+        <div class="relative" style="clear:both;">
+          <button onclick="toggleText('eggmon')" style="font-size:40px; background-color: black; color:white" id="myButton" class="float-left rounded" >
+            Eggmon PVP
+          </button>
+        </div>
+    </div>
+    <div class="container0 mw-100 ">
+        <div class="relative" style="clear:both;">
+            <button id="eggmon" style="display: none; font-size:40px; background-color: white; color:black; text-align: left" class="float-left rounded" >
+                &bull; real-time PVP but only eggmons are allowed 
+                <br>&bull; it maintains the balance against powercreep and heavily invested players
+            </button>  
+        </div>
+    </div>
+
+
+    <div class="container0 mw-100 ">
+        <div class="relative" style="clear:both;">
+          <button onclick="toggleText('aetherRaids')" style="font-size:40px; background-color: black; color:white" id="myButton" class="float-left rounded" >
+            Break the Defense (offline pvp mode)
+          </button>
+        </div>
+    </div>
+    <div class="container0 mw-100 ">
+        <div class="relative" style="clear:both;">
+            <button id="aetherRaids" style="display: none; font-size:40px; background-color: white; color:black; text-align: left" class="float-left rounded" >
+                &bull; Player A sets up a defense team with 9 pairs
+                <br>&bull; Player B chooses 3 pairs to beat that defense
+                <br>&bull; improved AI
+                <br>&bull; Tier-list based matchmaking
+            </button>  
+        </div>
+    </div>
+
+    <!-- OTEHR MODES -->
+
+
+    <div class="container0 mw-100 ">
+        <div class="relative" style="clear:both;">
+          <button style="font-size:40px; background-color: white; color:black" id="myButton" class="float-left rounded" >
+            OTHER MODES
+          </button>
+        </div>
+    </div>
+
+    <div class="container0 mw-100 ">
+        <div class="relative" style="clear:both;">
+          <button onclick="toggleText('other')" style="font-size:40px; background-color: black; color:white" id="myButton" class="float-left rounded" >
+            Links to original threads
+          </button>
+        </div>
+    </div>
+    <div class="container0 mw-100 ">
+        <div class="relative" style="clear:both;">
+            <button id="other" style="display: none; font-size:40px; background-color: white; color:black; text-align: left" class="float-left rounded" >
+                &bull; Survival mode (kind of) https://www.reddit.com/r/PokemonMasters/comments/irlqo7/concept_new_mode_challenge_road/
+                <br>&bull; crown mode https://www.reddit.com/r/PokemonMasters/comments/f6ehwy/new_mode_idea_defend_your_crown/
+            </button>  
+        </div>
+    </div>
   </body>
 </html>
