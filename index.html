@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+  <head>
+    <script src="js/toggleText.js"></script>
+
+    <link rel="stylesheet" href= "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
+    <link rel="shortcut icon" type="image/jpg" href="favicon.ico">
+
+    <!-- <script src= "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>  -->
+
+
+    <title>Pokemon Masters EX - New mode ideas</title>
+  </head>
+
+  <!-- BODY STARTS-->
+  <body style="background-color: aquamarine; background-image: url('images/backgrounds/blue1.jpg');">
+
+
+    <div class="container0 mw-100 ">
+        <div class="relative" style="clear:both;">
+          <button style="font-size:40px; background-color: white; color:black" id="myButton" class="float-left rounded" >
+            POKEMON MASTERS EX - GAME MODE IDEAS  <br>
+            -- click each mode for details on it --
+          </button>
+        </div>
+    </div>
+
+    <div class="container0 mw-100 ">
+        <div class="relative" style="clear:both;">
+          <button onclick="toggleText('secretBase')" style="font-size:40px; background-color: black; color:white" id="myButton" class="float-left rounded" >
+            Pokemon Secret Bases (Decoration)  
+          </button>
+        </div>
+    </div>
+    <div class="container0 mw-100 ">
+        <div class="relative" style="clear:both;">
+            <button id="secretBase" style="display: none; font-size:40px; background-color: white; color:black; text-align: left" class="float-left rounded" >
+                &bull; setup your own secret base decoration <br>
+
+                &bull; put 3-5 of your favorite pairs <br>
+
+                &bull; others can visit your base <br>
+            </button>  
+        </div>
+    </div>
+
+    <div class="container0 mw-100 ">
+        <div class="relative" style="clear:both;">
+          <button onclick="toggleText('mirrorMode')" style="font-size:40px; background-color: black; color:white" id="myButton" class="float-left rounded" >
+            Mirror Mode (Badges for each pair)
+          </button>
+        </div>
+    </div>
+    <div class="container0 mw-100 ">
+        <div class="relative" style="clear:both;">
+            <button id="mirrorMode" style="display: none; font-size:40px; background-color: white; color:black; text-align: left" class="float-left rounded" >
+                &bull; your team must contain 1 support, 1 striker and 1 tech
+                <br>&bull; enemy team and moves are identical to yours, but with AI-like stats (so higher HP to make battles longer and moderate damage that doesn't instantly oneshot you)
+                <br>&bull; after winning, you'll get a score and a rank based on it. you obtain more points for things like using fewer moves to defeat your opponents -including TM-, finishing the battle without anyone fainting, or syncing once with each one of your pairs (this could use some polish but it's a start)
+                <br>&bull; completely repeatable and without timegating of any sort. it could double as "training mode".
+                <br>&bull; rewards include special character badges that feature the pairs used in those battles (one badge for each character)
+            </button>  
+        </div>
+    </div>
+
+
+    <div class="container0 mw-100 ">
+        <div class="relative" style="clear:both;">
+          <button onclick="toggleText('specialTasks')" style="font-size:40px; background-color: black; color:white" id="myButton" class="float-left rounded" >
+            Special Tasks Battles (weekly)  
+          </button>
+        </div>
+    </div>
+    <div class="container0 mw-100 ">
+        <div class="relative" style="clear:both;">
+            <button id="specialTasks" style="display: none; font-size:40px; background-color: white; color:black; text-align: left" class="float-left rounded" >
+                &bull; win without losing any teammates 
+                <br>&bull; win without using sync moves
+                <br>&bull; win using pairs with no shared theme skills
+                <br>&bull; win without using items or trainer moves           
+            </button>  
+        </div>
+    </div>
+
+    <div class="container0 mw-100 ">
+        <div class="relative" style="clear:both;">
+          <button onclick="toggleText('t5')" style="font-size:40px; background-color: black; color:white" id="myButton" class="float-left rounded" >
+            A weekly battle where you get more rewards by beating it in different ways like  
+          </button>
+        </div>
+    </div>
+    <div class="container0 mw-100 ">
+        <div class="relative" style="clear:both;">
+            <button id="t5" style="display: none; font-size:40px; background-color: white; color:black; text-align: left" class="float-left rounded" >
+                &bull; win without losing any teammates <br>
+
+                &bull; win without using sync moves <br>
+
+                &bull; win using pairs with no shared theme skills <br>
+
+                &bull; win without using items or trainer moves <br>            
+            </button>  
+        </div>
+    </div>
+
+  </body>
+</html>
